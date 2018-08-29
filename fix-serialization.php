@@ -110,7 +110,7 @@ if (!(isset($argv) && isset($argv[1]))) {
 
 				// Replace serialized string values
 				$data = preg_replace_callback('!s:(\d+):([\\\\]?"[\\\\]?"|[\\\\]?"((.*?)[^\\\\])[\\\\]?");!',
-				function ($m)
+				function ($strResult)
 				{
 				    if (count($strResult) > 3)
 				    {
